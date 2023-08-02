@@ -2,7 +2,7 @@ document.getElementById('random').addEventListener('click', () => {
     let number = document.getElementById('inumber').value;
     let res = document.querySelector("#res");
     let img = document.querySelector("img");
-    let random = Math.floor(Math.random() * 6);
+    let random = Math.floor(Math.random() * 6 + 1);
     while(true){
         if(number <= 0 || number > 6){
             alert(`Please enter a valid input between 1 to 6.`);
